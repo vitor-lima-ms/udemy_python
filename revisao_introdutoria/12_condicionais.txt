@@ -1,0 +1,1 @@
+- A partir do momento que uma condicao if for verdadeira, o interpretador ignora todas as linhas abaixo que tenham elif e/ou else, mas nao ignora se tiver if --> Ele vai conferir a condicao e, se ela for falsa, nao vai executar o codigo do blobo --> No caso do elif/else, ele nem confere a condicao
