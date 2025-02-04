@@ -1,7 +1,9 @@
 - Tipo de tipagem: dinamica e forte
     - Dinamica: Python ja sabe o tipo da informacao que estamos passando para ele
     - Forte: Nao converte um tipo em outro automaticamente (so converte quando utilizamos funcoes especificas e se for possivel)
-- Tipos primitivos
+- Tipos primitivos imutaveis
+    - Imutaveis --> Nao conseguimos mudar
+        - Podemos atribuir o/a str/int/float/bool de uma variavel a outra para manipular, mas o valor original, atribuido a primeira variavel, se mantem --> Por isso imutavel
     - strings
         - Caracteres colocados entre aspas '' ou ""
         - Caractere de escape --> \ --> Faz com que o interpretador ignore o proximo caractere --> Permite printar aspas dentro de aspas (e.g., "Vitor \"Lima\"")
@@ -16,3 +18,4 @@
     - bool
         - Apenas dois valores: True ou False
         - Retornado por operadores lógicos (e.g., ==, >, < etc.)
+- 
