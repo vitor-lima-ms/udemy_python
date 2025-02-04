@@ -1,0 +1,3 @@
+- str + str = concatenacao
+- str * int
+    - a * 5 = aaaaa

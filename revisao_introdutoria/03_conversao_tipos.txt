@@ -1,4 +1,3 @@
-CONVERSAO ENTRE TIPOS
 - Sinonimos: coercao, type convertion, typecasting e coercion
 - Tipos imutaveis e primitivos: str, int, float e bool
     - int + int = soma

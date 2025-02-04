@@ -1,4 +1,3 @@
-FUNCAO print()
 - Argumentos nao nomeados:
     - Objetos
 - Argumentos nomeados:

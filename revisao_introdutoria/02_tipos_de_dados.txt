@@ -1,7 +1,6 @@
-TIPOS DE DADOS
-    - Tipo de tipagem: dinamica e forte
-        - Dinamica: Python ja sabe o tipo da informacao que estamos passando para ele
-        - Forte: Nao converte um tipo em outro automaticamente (so converte quando utilizamos funcoes especificas e se for possivel)
+- Tipo de tipagem: dinamica e forte
+    - Dinamica: Python ja sabe o tipo da informacao que estamos passando para ele
+    - Forte: Nao converte um tipo em outro automaticamente (so converte quando utilizamos funcoes especificas e se for possivel)
 - Tipos primitivos
     - strings
         - Caracteres colocados entre aspas '' ou ""

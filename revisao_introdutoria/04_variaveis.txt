@@ -1,4 +1,3 @@
-VARIAVEIS
 - Usadas para salvar algo na memória do computador
 - PEP8 --> Recomenda iniciar variaveis com letras minusculas --> _ e numeros podem, mas nao no inicio
 - = e o sinal de atribuicao
