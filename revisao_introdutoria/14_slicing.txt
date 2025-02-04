@@ -1,0 +1,9 @@
+           0  1  2  3  4
+variavel = V  I  T  O  R
+          -5 -4 -3 -2 -1
+- variavel[inicio:fim:passo]
+    - Indice final nao e incluido se for especificado
+    - Se omitirmos o inicio --> Considera que o inicio e o indice 0
+    - Se omitirmos o fim --> Considera que o fim e o ultimo indice
+    - variavel[inicio:len(variavel)]
+        - len() retorna o tamanho de objetos
