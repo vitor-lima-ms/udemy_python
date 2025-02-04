@@ -1,0 +1,6 @@
+- while
+    - Executa uma acao enquanto uma condicao for atendida
+    - Loop infinito --> Quando a condicao do while esta sempre sendo atendida
+    - break --> Procura o laco mais proximo e o interrompe
+    - continue --> Volta imediatamente ao inicio do laco
+    - Lacos internos (while dentro de um while)
