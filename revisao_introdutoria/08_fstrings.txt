@@ -1,9 +1,0 @@
-- a = 1
-- b = 2
-- c = 3
-- f'{a}, {b}, {c}'
-- f'{}, {}, {}'.format(a, b, c)
-- f'{0}, {0}, {0}, {1}, {2}'.format(a, b, c) -> a = indice 0,b = indice 1 e c = indice 2
-- f'{letra1}, {letra2}, {letra3}'.format(letra1 = a, letra2 = b, letra3 = c)
-    - Parametros nomeados
-    - Se nomeamos um parametro, os seguintes tambem tem que ser nomeados

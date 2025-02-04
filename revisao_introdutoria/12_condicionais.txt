@@ -1,1 +1,30 @@
 - A partir do momento que uma condicao if for verdadeira, o interpretador ignora todas as linhas abaixo que tenham elif e/ou else, mas nao ignora se tiver if --> Ele vai conferir a condicao e, se ela for falsa, nao vai executar o codigo do blobo --> No caso do elif/else, ele nem confere a condicao
+- strings podem ser comparadas a partir da tabela unicode --> No caso de '==' ou '!=', e mais facil visualizar
+    - 'a' == 'a' --> True
+    - 'a' != 'a' --> False
+- Operador and
+    - Todas as condicoes precisam ser atendidas
+    - Se qualquer condicao nao for atendida, a expressao inteira sera avaliada como False
+        - Avaliacao de curto-circuito --> Se alguma condicao na for atendida, o interpretador nem confere as condicoes posteriores, caso existam
+    - Sao considerados como falsy
+        - 0, 0.0, '', False, None etc
+- Operador or
+    - Apenas uma condicao precisa ser atendida
+    - Se qualquer condicao for atendida, a expressao inteira sera avaliada como True
+        - Ou seja, todas as condicoes precisam nao ser atendidas para que a expressao seja avaliada como False
+- Operador not
+    - Utilizado para inverter expressoes
+    - not True = False
+    - not False = True
+- Operadores in e not in
+    - in = Esta entre
+    - not in = Nao esta entre
+    - Muito utilizado para iterar em strings
+        - 'V' in 'Vitor' --> True
+        - 'A' in 'Vitor' --> False
+        - Indices
+            0 1 2 3 4
+            V i t o r
+           -5-4-3-2-1
+- Podemos atribuir valores a variaveis utilizando os operadores logicos
+    - a = input() ou 'Qualquer coisa'

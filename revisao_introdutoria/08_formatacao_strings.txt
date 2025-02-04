@@ -1,0 +1,21 @@
+- f strings
+    - a = 1
+    - b = 2
+    - c = 3
+    - f'{a}, {b}, {c}'
+    - f'{}, {}, {}'.format(a, b, c)
+    - f'{0}, {0}, {0}, {1}, {2}'.format(a, b, c) -> a = indice 0,b = indice 1 e c = indice 2
+    - f'{letra1}, {letra2}, {letra3}'.format(letra1 = a, letra2 = b, letra3 = c)
+        - Parametros nomeados
+        - Se nomeamos um parametro, os seguintes tambem tem que ser nomeados
+    - f'{variavel: >n}' --> n espacos a esquerda
+    - f'{variavel: <n}' --> n espacos a direita
+    - f'{variavel: ^n}' --> centraliza o texto e preenche a direita e a esquerda com n espacos no total
+    - Antes do >, < ou ^ podemos especificar o caractere que devera ser utilizado para preencher no lugar de espacos em branco
+- Interpolacao (%)
+    - s --> string
+    - d e i --> int
+    - f --> float
+    - x e X --> Hexadecimal (numeros formados de letras da a a f e numeros de 0 a 9)
+    - texto = '%s, %d ou %i, %.nf' % (string, int, float)
+    - 'O hexadecimal de %d e %x ou %X' % (int, int)
