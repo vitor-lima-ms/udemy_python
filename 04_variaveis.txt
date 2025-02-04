@@ -1,0 +1,6 @@
+VARIAVEIS
+- Usadas para salvar algo na memória do computador
+- PEP8 --> Recomenda iniciar variaveis com letras minusculas --> _ e numeros podem, mas nao no inicio
+- = e o sinal de atribuicao
+- Podemos atribuir valores e expressoes
+- E importante que o nome da variavel reflita exatamente o valor ou expressao atribuida a ela

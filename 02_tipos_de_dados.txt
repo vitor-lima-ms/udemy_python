@@ -1,6 +1,7 @@
 TIPOS DE DADOS
     - Tipo de tipagem: dinamica e forte
-        - Dinamica: Python ja sabe o tipo da informacao que estamos passando para ele 
+        - Dinamica: Python ja sabe o tipo da informacao que estamos passando para ele
+        - Forte: Nao converte um tipo em outro automaticamente (so converte quando utilizamos funcoes especificas e se for possivel)
 - Tipos primitivos
     - strings
         - Caracteres colocados entre aspas '' ou ""
@@ -10,6 +11,9 @@ TIPOS DE DADOS
     - int e float
         - int = Numeros inteiros positivos ou negativos ou 0
         - float = Numeros positivos ou negativos ou 0, com ponto flutuante
-    - Classe type
-        - E uma classe, nao uma funcao --> A sintaxe confunde pois classes no geral comecam com letra maiuscula
-        - Retorna o tipo
+        - Classe type
+            - E uma classe, nao uma funcao --> A sintaxe confunde pois classes no geral comecam com letra maiuscula e são callable 
+            - Retorna o tipo
+    - bool
+        - Apenas dois valores: True ou False
+        - Retornado por operadores lógicos (e.g., ==, >, < etc.)

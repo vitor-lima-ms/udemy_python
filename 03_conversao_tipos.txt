@@ -1,0 +1,10 @@
+CONVERSAO ENTRE TIPOS
+- Sinonimos: coercao, type convertion, typecasting e coercion
+- Tipos imutaveis e primitivos: str, int, float e bool
+    - int + int = soma
+    - str + str = concatenacao
+    - int + str = TypeError
+- str(), int(), float() e bool() conseguem converter um tipo primitivo em outro, caso seja possivel
+    - int('abc') --> Erro --> Python nao conseguiria converter
+    - bool('') --> False
+    - bool(' ') --> True
