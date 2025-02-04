@@ -1,0 +1,2 @@
+- Funcao que retorna a identidade de uma variavel
+- O Python entende quando duas variaveis tem um mesmo valor atribuido e aloca apenas uma espaco na memoria para guardar esse valor

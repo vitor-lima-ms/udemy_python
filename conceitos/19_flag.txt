@@ -1,0 +1,14 @@
+- Atribuir None a uma variavel criada fora de um bloco condicional --> Atribuir True para essa mesma variavel dentro do bloco condicional --> Flag
+    - Muito utilizada com is e is not
+    - Exemplo:
+        condicao = False
+        passou_no_if = None
+        if condicao:
+            passou_no_if = True
+        print(passou_no_if) --> None
+
+        condicao = True
+        passou_no_if = None
+        if condicao:
+            passou_no_if = True
+        print(passou_no_if) --> True

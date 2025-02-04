@@ -1,0 +1,2 @@
+- try --> Tenta executar o codigo
+- except --> Se der erro

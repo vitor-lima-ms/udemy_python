@@ -1,0 +1,5 @@
+- Variaveis com valor constante --> Utilizar apenas letras maiusculas e numeros
+- Muitas condicoes de um mesmo if --> Evitar
+- Quanto mais espacos a esquerda, mais complexo --> Evitar
+- \ --> Quebra o codigo
+- Atribuir condicionais em variaveis
