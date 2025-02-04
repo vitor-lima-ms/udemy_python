@@ -1,0 +1,9 @@
+FUNCAO print()
+- Argumentos nao nomeados:
+    - Objetos
+- Argumentos nomeados:
+    - sep = separador entre argumentos nao nomeados (e.g.,  '.',  ',', '' etc.)
+    - end = quebra de linha
+        /r/n: CRLF (Windows)
+        /n: LF (Linux, macOS e outros sistemas unix)
+        se nao quisermos quebrar a linha --> utilizar outros caracteres (e.g. '', '#' etc.)

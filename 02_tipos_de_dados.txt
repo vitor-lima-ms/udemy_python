@@ -1,0 +1,15 @@
+TIPOS DE DADOS
+    - Tipo de tipagem: dinamica e forte
+        - Dinamica: Python ja sabe o tipo da informacao que estamos passando para ele 
+- Tipos primitivos
+    - strings
+        - Caracteres colocados entre aspas '' ou ""
+        - Caractere de escape --> \ --> Faz com que o interpretador ignore o proximo caractere --> Permite printar aspas dentro de aspas (e.g., "Vitor \"Lima\"")
+        - r --> Mostra o caractere de escape --> print(r"Vitor \"Lima\"")
+        - Uma maneira mais facil é utilzar aspas duplas dentro de aspas simples ou o contrario
+    - int e float
+        - int = Numeros inteiros positivos ou negativos ou 0
+        - float = Numeros positivos ou negativos ou 0, com ponto flutuante
+    - Classe type
+        - E uma classe, nao uma funcao --> A sintaxe confunde pois classes no geral comecam com letra maiuscula
+        - Retorna o tipo
