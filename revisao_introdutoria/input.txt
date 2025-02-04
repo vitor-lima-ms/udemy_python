@@ -1,0 +1,5 @@
+- variavel = input()
+ - Atribui a variavel o valor digitado pelo usuario
+ - Sempre retorna uma string
+ - int(input()) e float(input()) --> Converte a string em int e float
+    - Pode gerar problemas --> Se o valor informado pelo usuario nao puder ser convertido para int ou float --> Erro

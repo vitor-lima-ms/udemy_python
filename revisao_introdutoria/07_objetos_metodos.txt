@@ -1,0 +1,4 @@
+- Tudo em Python se resume a objetos
+    - Objetos tem metodos
+        - Quando uma funcao esta dentro de um objeto, essa funcao e chamada de metodo
+    - Para acessar os metodos de um objeto, basta colocar um . logo apos o objeto
