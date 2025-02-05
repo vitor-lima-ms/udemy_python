@@ -25,3 +25,25 @@
     - *args --> N argumentos nao nomeados --> Empacota em uma tupla
         - Se quisermos enviar variaveis ja empacotadas, precisamos desempacotar antes utilizando o * tambem
     - *kargs --> N argumentos nomeados
+- Higher Order Functions e First-Class Functions
+    - Podemos atribuir funcoes como um todo a uma variavel
+        - First-Class Functions
+    - Podemos definir funcoes que executam/retornam outras funcoes
+        - Higher Order Functions
+    - Exemplo:
+        def saudacao(msg)
+            return msg
+        def executa(funcao, parametro)
+            return funcao(parametro)
+        variavel = executa(saudacao, 'Bom dia')
+        print(variavel) --> 'Bom dia'
+    - Podemos usar isso com *args
+        def saudacao(msg, argumento_adicional1, ..., argumento_adicionalN)
+            return msg
+        def executa(funcao, *args) --> Aqui, os args estao empacotados em uma tupla
+            return funcao(*args) --> Aqui o * desempacota
+        variavel = executa(saudacao, 'Bom dia')
+        print(variavel) --> 'Bom dia'
+        - Dessa forma, podemos adicionar quantos parametros quisermos na funcao saudacao (e.g., em situacoes de refatoracao de codigo) --> Se ela estiver sendo executada a partir da funcao executa(), que tem *args, nao teriamos erros
+- Closure
+    - Forcar o salvamento de argumentos passados para  uma funcao, criando uma outra funcao dentro dela que retorna esses argumentos. A funcao principal ira retornar a funcao (sem ()) e essa funcao sera atribuida a uma variavel. O Closure so acontecera que utilizarmos o artifico nome_variavel(), uma vez que a variavel armazenou essa funcao, logo, nome_variavel() executa a funcao armazenada
