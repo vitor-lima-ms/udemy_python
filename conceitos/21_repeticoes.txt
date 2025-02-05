@@ -12,4 +12,4 @@
                 ...
             - Quando saimos do laco forcadamente, com um break por exemplo, esse else nao e alcancado
             - Exemplo pratico
-                - Procurar um espaco em uma string --> Se encontrar -> break --> Se nao encontrar podemos utilizar o else para avisar com um print()
+                - Procurar um espaco em uma string --> Se encontrar -> break --> Se nao encontrar podemos utilizar o else para avisar com um print('Nao encontrei espacos')
