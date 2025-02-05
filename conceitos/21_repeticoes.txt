@@ -4,3 +4,12 @@
     - break --> Procura o laco mais proximo e o interrompe
     - continue --> Volta imediatamente ao inicio do laco
     - Lacos internos (while dentro de um while)
+    - while else
+        - Quando o laco e executado completamente, sem que saiamos forcadamente, alcancamos um else
+            while ...:
+                ...
+            else:
+                ...
+            - Quando saimos do laco forcadamente, com um break por exemplo, esse else nao e alcancado
+            - Exemplo pratico
+                - Procurar um espaco em uma string --> Se encontrar -> break --> Se nao encontrar podemos utilizar o else para avisar com um print()
