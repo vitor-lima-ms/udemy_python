@@ -2,13 +2,13 @@
 
 '''1- Coletar a soma dos 9 primeiros digitos do CPF, multiplicando cada um dos valores por uma contagem regressiva comecando do 10, somar todos os resultados dessa multiplicacao'''
 
-cpf = input('CPF: ')
+cpf = '35402479712'
 cpf_tratado = cpf.replace('.', '').replace('-', '').replace(' ', '')
 
-while cpf_tratado.isnumeric() is False:
-    print('Valores não numéricos!')
-    cpf = input('CPF: ')
-    cpf_tratado = cpf.replace('.', '').replace('-', '').replace(' ', '')
+#while cpf_tratado.isnumeric() is False:
+#    print('Valores não numéricos!')
+#    cpf = input('CPF: ')
+#    cpf_tratado = cpf.replace('.', '').replace('-', '').replace(' ', '')
 
 
 soma_9_digitos = 0
