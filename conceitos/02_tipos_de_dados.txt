@@ -60,11 +60,33 @@
                 - Cria uma lista igual a concatenacao de outras listas
             - extend
                 - Altera a lista original, concatenando uma outra lista passada como argumento --> Nao retorna uma lista --> Retorna None
+    - Dicionarios
+        - Estrutura de dados com par de chave e valor
+        - Chaves podem ser criadas com qualquer tipo de dado imutavel
+            - Facilita o acesso aos valores
+            - Precisam existir, se nao acontece um erro
+            - Se criarmos chaves iguais, o ultimo valor sempre sera usado
+        - O valor pode ser qualquer valor
+        - Podemos apagar as chaves e seus respectivos valores com o del
+        - Metodo .get --> Tenta obter uma chave --> Se nao existir, retorna None como valor padrao --> Podemos escolher um outro valor
+        - len() --> Retorna quantas chaves
+        - .keys() --> Retorna as chaves do dicionarios --> Podemos converter o tipo retornado para tupla e/ou lista
+        - .values() --> Retorna os valores do dicionarios --> Podemos converter o tipo retornado para tupla e/ou lista
+        - .items() --> Retorna tuplas com chave e valor --> Podemos converter o tipo retornado para tupla e/ou lista
+        - .setdefalut() --> Adiciona um valor se a chave nao existe
+        - .pop() --> Apaga a chave mas salva o valor em outra variavel
+        - .popitem() --> Elimina o ultimo item mas salva em uma variavel
+        - .update() --> Modifica valores, cria novas chaves
+            - Podemos passar uma tupla/lista como par de chave e valor
     - Cuidados com dados mutaveis
         - Atribuir uma lista que ja esteja atribuida a uma variavel a outra variavel nao cria uma copia, como nos dados imutaveis, e sim um conexao
             - lista_a = [1, 2, 3]
             - lista_b _ lista_a --> Ambos apontam para o mesmo endereco de memoria --> Isso implica em, se mudarmos qualquer coisa na lista_a, a lista_b tambem sera alterada e vice-versa
             - Para criar uma copia --> Utilizar o metodo .copy()
+        - shallow e deep copy
+            - .copy() em listas e dicionarios retorna um shallow copy
+                - shallow copy --> Tudo que for imutavel sera copiado para a copia --> Mas se tiver um valor mutavel, os dois dicionarios irao compartilhar o valor mutavel --> Alterar em um, altera no outro
+                - deep copy --> import copy --> copy.deepcopy() --> Todos os valores serao copiados e nenhum compartilhado
 - Tipos nao primitivos imutaveis
     - Tuplas
         - Basicamente listas imutaveis
