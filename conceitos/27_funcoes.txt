@@ -1,0 +1,27 @@
+- Funcoes sao trechos de codigo usados para replicar determinada acao ao logo de outro codigo
+- Funcoes podem receber valores para parametros (argumentos) e retornar um valor especifico (return)
+    - Parametros --> Variaveis entre os parenteses da funcao
+        - Para tornar os parametros opcionais, atribuimos um valor ao parametro dentro dos parenteses da def --> Valor padrao --> Geralmente, atribuimos None --> Para facilitar a verificacao com: if 'parametro' is None...
+            - Todo parametro que vem apos uma parametro com valor padrao precisa ter um valor padrao tambem
+    - Argumentos --> Valores atribuidos aos parametros
+        - Argumentos nomeados --> 'parametro' = 'argumento'
+            -Todos os argumentos apos um argumento nomeado precisam ser nomeados
+        - Argumento posicional --> 'argumento' --> A atribuicao do argumento ao parametro e realizada a partir da posicional
+- Por padrao, as funcoes Python retornam None
+- E interessante seguir as mesmas regras de nomeacao de variaveis para funcoes
+- Escopo de funcoes
+    - Escopo significa o local onde aquele codigo pode atingir
+    - Escopo global --> Onde todo o codigo e alcancavel
+    - Escopo local --> Onde apenas variaveis do mesmo local podem ser alcancadas --> O que e definido na funcao fica apenas na funcao
+        - Podemos definir uma variavel globalmente para usa-la dentro de uma funcao. Contudo, e necessario que a atribuicao dessa variavel seja feita antes da chamada da funcao
+        - Podemos utilizar o mesmo nome em variaveis do escopo global e em variaveis do escopo local
+        - Se quisermos manipular uma variavel global dentro de uma funcao, podemos usar o global 'variavel_global'
+    - Escopo locais podem acessar variaveis atribuidas em escopos globais, mas o contrario nao e verdadeiro
+    - Call Stack --> Utiliza um espaco adicional na memoria para armazenar tudo que esta no escopo local --> A partir do momento que o escopo e resolvido, esse espaco e liberado
+- return
+    - Funcoes que apenas executam acoes --> return = None --> e.g., print(): Apenas mostra o conteudo na saida padrao
+    - Funcoes com return --> Permitem armazenar os resultados da funcao em variaveis (i.e., na memoria do computador)
+- *args
+    - *args --> N argumentos nao nomeados --> Empacota em uma tupla
+        - Se quisermos enviar variaveis ja empacotadas, precisamos desempacotar antes utilizando o * tambem
+    - *kargs --> N argumentos nomeados
