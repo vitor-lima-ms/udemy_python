@@ -16,3 +16,5 @@
         - Se nao formos utilizar a variavel resto, o correto e nomea-la com um _
         Pegando um valor que nao seja o primeiro
         _, nome2, *_ = nomes
+- Desempacotamento em chamadas de funcoes
+    - print(*objeto_iteravel) --> Pode ser utilizada em outras funcoes, nao apenas no print

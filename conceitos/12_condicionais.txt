@@ -27,4 +27,8 @@
             V i t o r
            -5-4-3-2-1
 - Podemos atribuir valores a variaveis utilizando os operadores logicos
-    - a = input() ou 'Qualquer coisa'
+    - a = input() or 'Qualquer coisa'
+- Operacao ternaria
+    - 'valor' if 'condicao' else 'outro valor'
+        - Se a condicao for verdadeira, retorna 'valor'
+        - Se for falsa, retorna 'outro valor'

@@ -1,0 +1,10 @@
+- python --version ou -V --> Versao do Python
+- python --help --> Lista diversos comando
+- python 'modulo'.py --> Executa o modulo
+- python -u --> Executa no modo unbuffered -> Sem o -u, o Python salva as informacoes do print em um buffer de memoria (i.e., espaco adicional de memoria)
+- python -m 'modulo' --> Executa uma biblioteca como script
+- python -c 'comando' --> Executa o comando, ou os comandos (separados por ;), diretamente no terminal
+- python -i 'modulo'.py --> Interativo com o modulo no terminal
+- The Zen of Python
+    - python -c 'import this'
+    - Recomendacoes para um desenvolver codigos em Python

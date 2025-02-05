@@ -9,19 +9,42 @@
         - Caractere de escape --> \ --> Faz com que o interpretador ignore o proximo caractere --> Permite printar aspas dentro de aspas (e.g., "Vitor \"Lima\"")
         - r --> Mostra o caractere de escape --> print(r"Vitor \"Lima\"")
         - Uma maneira mais facil é utilzar aspas duplas dentro de aspas simples ou o contrario
+        - split
+            - Divide uma string a partir de um caractere separador --> Padrao --> Espaco
+                - O caractere separador pode ser uma composicao --> ', '
+            - Retorna uma lista
+        - strip
+            - Remove espacos do comeco e fim
+            - rstrip --> Remove apenas espacos a direita
+            - lstrip --> Remove apenas espacos a esquerda
+        - join
+            - Une strings
+            - Exemplo
+                string_unida = 'separador'.join(string)
     - int e float
         - int = Numeros inteiros positivos ou negativos ou 0
         - float = Numeros positivos ou negativos ou 0, com ponto flutuante
         - Classe type
             - E uma classe, nao uma funcao --> A sintaxe confunde pois classes no geral comecam com letra maiuscula e são callable 
             - Retorna o tipo
+        - Imprecisao de floats
+            - Devido a forma como o Python, e outras linguagens, armazenam alguns numeros com ponto flutuante na memoria, as vezes e possivel observar uma imprecisao de casas decimais mesmo em operacoes que retornariam numeros precisos
+            - Exemplo
+                num1 = 0.1
+                num2 = 0.7
+                num3 = num1 + num2
+                print(num3) --> 0.7999999999...
+            - Formas de contornar
+                - funcao round(float, n_casas_decimais) --> Mantem o tipo do float
+                - import decimal.Decimal
+                    - Converte corretamente uma string em float
     - bool
         - Apenas dois valores: True ou False
         - Retornado por operadores lógicos (e.g., ==, >, < etc.)
 - Tipos nao primitivos mutaveis
     - Listas
         - Suporta varios valores de qualquer tipo
-        - Conhecimentos reutilizaveis --> Indices e fatiamento
+        - Conhecimentos reutilizaveis --> Indices, fatiamento, split, strip e join
         - Se estiver vazia --> falsy
         - Metodos uteis:
             - append --> Adiciona um elemento no final da listas
