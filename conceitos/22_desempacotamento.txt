@@ -1,0 +1,18 @@
+- Processo que pode ser realizado em qualquer objeto iteravel
+    - Extrair os valores de cada indice
+    - Exemplo
+        nomes = ['Joao', 'Maria', 'Vitor']
+        nome1, nome2, nome3 = nomes
+        print(nome1) = nomes[0]
+        print(nome2) = nomes[1]
+        print(nome3) = nomes[2]
+    - Se a lista tiver mais valores do que variaveis --> Erro
+    - Se a lista tiver menos valores do que variaveis --> Erro
+    - Se nao quisermos desempacotar todos os valores, precisamos adotar a seguinte estrategia
+        Criar uma variavel para receber os outros valores
+        nome1, *resto = nomes
+        nome1 --> 'Joao'
+        resto --> ['Maria', 'Vitor']
+        - Se nao formos utilizar a variavel resto, o correto e nomea-la com um _
+        Pegando um valor que nao seja o primeiro
+        _, nome2, *_ = nomes

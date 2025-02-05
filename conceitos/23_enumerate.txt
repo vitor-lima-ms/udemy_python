@@ -1,0 +1,10 @@
+- Utilizado para enumerar elementos em objetos iteraveis
+- E um iterator
+- Gera uma tupla com indice, valor
+    - Podemos determinar a partir de qual indice o enumerate ira numerar, utilizando o argumento nomeado start
+- Muito usado com o for
+    - Geralmente usamos direto no for
+        for item in enumerate(objeto_iteravel)
+        for indice, valor in enumerate(objeto_iteravel)
+        - Isso e feito pois, se atribuirmos um enumerate a uma variavel, por ser um objeto iterador, a partir do momento que ele iterar sobre todos os elementos de um determinado objeto iteravel, seu valor se "esgota"
+- Podemos converter o objeto iterador gerado pelo enumerate para listas e/ou tuplas

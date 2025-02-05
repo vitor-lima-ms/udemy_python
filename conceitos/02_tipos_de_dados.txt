@@ -18,7 +18,7 @@
     - bool
         - Apenas dois valores: True ou False
         - Retornado por operadores lógicos (e.g., ==, >, < etc.)
-- Tipos mutaveis
+- Tipos nao primitivos mutaveis
     - Listas
         - Suporta varios valores de qualquer tipo
         - Conhecimentos reutilizaveis --> Indices e fatiamento
@@ -42,3 +42,10 @@
             - lista_a = [1, 2, 3]
             - lista_b _ lista_a --> Ambos apontam para o mesmo endereco de memoria --> Isso implica em, se mudarmos qualquer coisa na lista_a, a lista_b tambem sera alterada e vice-versa
             - Para criar uma copia --> Utilizar o metodo .copy()
+- Tipos nao primitivos imutaveis
+    - Tuplas
+        - Basicamente listas imutaveis
+        - Tem todos os metodos de lista exceto os metodos que alteram valores
+        - Mais eficiente que a lista --> Tem um tamanho pré-definido --> Acho que pode ser considerada como o array do curso do Galego --> A lista na verdade e uma linked list
+        - Se nao formos alterar elementos --> Usar tupla
+        - Podemos converter uma lista para uma tupla e vice-versa --> tuple() e list()
