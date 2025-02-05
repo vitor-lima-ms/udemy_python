@@ -31,3 +31,4 @@
             print(nome.__next__) --> Erro, pois o objeto iteravel acabou
 
             O for reconhece esse erro e para a iteracao sem exibir esse erro na saida padrao
+    - break, continue e else tambem funcionam com o for
