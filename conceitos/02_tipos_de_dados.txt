@@ -78,6 +78,30 @@
         - .popitem() --> Elimina o ultimo item mas salva em uma variavel
         - .update() --> Modifica valores, cria novas chaves
             - Podemos passar uma tupla/lista como par de chave e valor
+    - Sets
+        - = Conjuntos da matemática --> Representados graficamente pelo diagrama de Venn
+        - Sao mutaveis porem so aceitam valores imutaveis
+        - Para criar um set --> set(iteravel) ou {1, 2, 3 ...}
+            - Usam chaves mas nao tem par de chave e valor --> Diferenca para os dicionarios
+            - Nao podemos inicia-lo com {} --> Isso cria um dicionario
+        - Sao muito eficientes para remover valores dulicados de iteraveis --> Seus valores serao sempre unicos
+        - Nao tem indices
+        - Nao garantem a ordem
+        - Sao iteraveis
+        - Por esses motivos, sao mais eficientes em termos computacionais
+        - Metodos uteis
+            - .add() --> Adiciona apenas um elemento por vez
+            - .update() --> Permite adicionar mais de um elemento por vez, mas temos que ter o cuidado para passar um iteravel que retorne o valor desejado
+            - .clear() --> Limpa todo o set
+            - .discard() --> Eliminamos um valor desejado
+            - Podemos usar in set
+        - Operadores importantes
+            - Uniao --> |
+            - Interseccao --> &
+            - Diferenca --> Itens presentes apenas no set da esquerda --> -
+            - Diferenca simetrica --> Itens que nao estao em ambos --> ^
+        - Exemplo de uso
+            - Buscar uma letra no input do usuario
     - Cuidados com dados mutaveis
         - Atribuir uma lista que ja esteja atribuida a uma variavel a outra variavel nao cria uma copia, como nos dados imutaveis, e sim um conexao
             - lista_a = [1, 2, 3]
