@@ -37,3 +37,8 @@
                 - Cria uma lista igual a concatenacao de outras listas
             - extend
                 - Altera a lista original, concatenando uma outra lista passada como argumento --> Nao retorna uma lista --> Retorna None
+    - Cuidados com dados mutaveis
+        - Atribuir uma lista que ja esteja atribuida a uma variavel a outra variavel nao cria uma copia, como nos dados imutaveis, e sim um conexao
+            - lista_a = [1, 2, 3]
+            - lista_b _ lista_a --> Ambos apontam para o mesmo endereco de memoria --> Isso implica em, se mudarmos qualquer coisa na lista_a, a lista_b tambem sera alterada e vice-versa
+            - Para criar uma copia --> Utilizar o metodo .copy()
