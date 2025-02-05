@@ -18,4 +18,22 @@
     - bool
         - Apenas dois valores: True ou False
         - Retornado por operadores lógicos (e.g., ==, >, < etc.)
-- 
+- Tipos mutaveis
+    - Listas
+        - Suporta varios valores de qualquer tipo
+        - Conhecimentos reutilizaveis --> Indices e fatiamento
+        - Se estiver vazia --> falsy
+        - Metodos uteis:
+            - append --> Adiciona um elemento no final da listas
+                - Nao requer tanto processamento uma vez que nenhum indice anterior ao elemento adicionado sera alterado
+            - insert --> Insere um elemento em determinado indice
+            - pop --> Remove o ultimo item, por padrao, ou em um determinado indice 
+                - Podemos armazenar o ultimo valor removido em uma variavel
+            - del --> Deleta o elemento de um determinado indice
+                - E importante se atentar com esses processos, pois dependendo do local de insercao ou remocao, muitos indices terao que ser alterados --> Causa de lentidao
+                - O mais interessante de se fazer com listas é remover ou colocar dados no final dela
+            - clear --> Limpa toda a lista
+            - +
+                - Cria uma lista igual a concatenacao de outras listas
+            - extend
+                - Altera a lista original, concatenando uma outra lista passada como argumento --> Nao retorna uma lista --> Retorna None
