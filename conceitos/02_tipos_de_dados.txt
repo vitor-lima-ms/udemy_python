@@ -60,6 +60,8 @@
                 - Cria uma lista igual a concatenacao de outras listas
             - extend
                 - Altera a lista original, concatenando uma outra lista passada como argumento --> Nao retorna uma lista --> Retorna None
+            - .sort() --> Ordena a lista original
+            - sorted(lista) --> Cria uma shallow copy da lista ordenada
     - Dicionarios
         - Estrutura de dados com par de chave e valor
         - Chaves podem ser criadas com qualquer tipo de dado imutavel
@@ -78,6 +80,16 @@
         - .popitem() --> Elimina o ultimo item mas salva em uma variavel
         - .update() --> Modifica valores, cria novas chaves
             - Podemos passar uma tupla/lista como par de chave e valor
+        - Empacotamento e desempacotamento de dicionarios
+            - Podemos desempacotar os valores dessa forma --> a, b = dicionario.values()
+                - Se nao passarmos o .values() --> Desempacota as chaves
+            - {**dicionario} -> Desempacota chave e valor dentro de outro dicionario --> Podemos extrair mais de um dicionario dentro de outro
+            - kwargs (keyword arguments)
+                - Sempre usar **
+                - funcao(kwargs1=a, kwargs2=b)
+                    - Empacotando os kwargs
+                - funcao(**dicionario)
+                    - Desempacotando as chaves e valores do dicionario
     - Sets
         - = Conjuntos da matemática --> Representados graficamente pelo diagrama de Venn
         - Sao mutaveis porem so aceitam valores imutaveis
@@ -105,7 +117,7 @@
     - Cuidados com dados mutaveis
         - Atribuir uma lista que ja esteja atribuida a uma variavel a outra variavel nao cria uma copia, como nos dados imutaveis, e sim um conexao
             - lista_a = [1, 2, 3]
-            - lista_b _ lista_a --> Ambos apontam para o mesmo endereco de memoria --> Isso implica em, se mudarmos qualquer coisa na lista_a, a lista_b tambem sera alterada e vice-versa
+            - lista_b = lista_a --> Ambos apontam para o mesmo endereco de memoria --> Isso implica em, se mudarmos qualquer coisa na lista_a, a lista_b tambem sera alterada e vice-versa
             - Para criar uma copia --> Utilizar o metodo .copy()
         - shallow e deep copy
             - .copy() em listas e dicionarios retorna um shallow copy
@@ -118,3 +130,4 @@
         - Mais eficiente que a lista --> Tem um tamanho pré-definido --> Acho que pode ser considerada como o array do curso do Galego --> A lista na verdade e uma linked list
         - Se nao formos alterar elementos --> Usar tupla
         - Podemos converter uma lista para uma tupla e vice-versa --> tuple() e list()
+    - range()

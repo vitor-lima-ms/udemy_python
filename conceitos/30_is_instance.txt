@@ -1,0 +1,2 @@
+- Utilizado para checar o tipo de variaveis
+- isinstance(valor_a_se_checar, (tipo1, tipo2)) --> Aceita somente um tipo tambem

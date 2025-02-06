@@ -1,0 +1,9 @@
+- dict comprehension
+    - Mesma coisa que lista, apenas trocando [] por {} e utilizando o par chave, valores
+    - dicionario = {
+        chave: valor
+        for chave, valor
+        in outro_dicionario.items()
+    }
+- set comprehension
+    - Mesma coisa do dicionario mas sem par chave e valor, somente valor

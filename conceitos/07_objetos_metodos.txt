@@ -3,6 +3,9 @@
         - Quando uma funcao esta dentro de um objeto, essa funcao e chamada de metodo
     - Para acessar os metodos de um objeto, basta colocar um . logo apos o objeto
 - Alguns metodos padrao
-- sys.exit() --> Mata o programa
-- random.randint --> Gera numeros inteiros aleatorios
-- time.sleep() --> Retarda a execucao do programa
+    - sys.exit() --> Mata o programa
+    - random.randint --> Gera numeros inteiros aleatorios
+    - time.sleep() --> Retarda a execucao do programa
+- dir(objeto) --> Retorna todos os metodos de um objeto
+- hasattr(objeto, 'atributo/metodo') --> Verifica se existe tal atributo/metodo
+- getattr(objeto, variavel com uma string que tem o nome de um metodo)

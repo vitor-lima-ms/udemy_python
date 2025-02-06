@@ -1,2 +1,17 @@
 - try --> Tenta executar o codigo
 - except --> Se der erro
+- O correto e sempre especificar a excecao
+    - except Excecao:
+        ...
+    - Podemos colocar varias excecoes
+    try:
+        ...
+    except Excecao1:
+        ...
+    except Excecao2:
+        ...
+    except (Excecao3, Excecao4)
+    - except Excepton --> Trata todos os erros
+- finally --> Sempre sera executado, independente se deu erro ou nao
+- else --> So sera executado se nao der erro
+- raise --> Relanca um erro na saida padrao --> Podemos utiliza-lo para criar nosso proprio erro

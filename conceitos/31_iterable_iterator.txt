@@ -1,0 +1,2 @@
+- Iterator --> Unica coisa que ele faz e entregar o proximo valor de um objeto iteravel --> Tem obrigatoriamente os metodos .__iter__, que retorna ele mesmo, e o .__next__, que retorna o proximo item do objeto iteravel ao qual o iterator esta associado
+- Iteravel --> Objeto que apresenta o metodo .__iter__ -->  Vai retornar o iterator do objeto iteravel

@@ -1,0 +1,16 @@
+- Forma rapida de criar listas a partir de iteraveis
+    - lista = [numero for numero in range(10)] --> [0,1,2,3,4,5,6,7,8,9]
+    - lista = [1 for numero in range(10)] --> [1,1,1,1,1,1,1,1,1,1]
+    - lista = [(numero * 2) for numero in range(10)] --> [0,2,4,6,8,10,12,14,16,18]
+- Mapeamento de dados
+    - Alterar somente os valores, mas nao o tamanho e consequentemente os indices
+    - Se quisermos colocar uma condicao (if else ternario) --> A esquerda do for mas dps do list comprehension
+- Filtro de dados
+    - Vai alterar o tamanho
+    - O if nesse caso vem a direita do for e nao tem else
+- 2 for
+    - lista = [
+        (x, y) 
+        for x in range(3)
+        for y in range 3
+    ] --> [(0,0), (0,1), (0,2) ...]

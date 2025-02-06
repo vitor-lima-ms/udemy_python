@@ -1,0 +1,25 @@
+- Funcoes que sabem pausar
+- Todo generator e um iterator, mas o contrario nao e verdadeiro
+- [n for n in range(10)] --> list comprehention --> Salva todos os elementos na memoria a partir do momento que ela foi criada
+- (n for n in range(10)) --> generator --> Nao salva todos os elementos na memoria
+- Comparacao de tamanho
+    import sys
+    sys.getsizeof([n for n in range(10000)]) --> 85176 bytes
+    sys.getsizeof((n for n in range(10000))) --> 104 bytes
+
+    sys.getsizeof([n for n in range(1000000)]) --> 8448728 bytes
+    sys.getsizeof((n for n in range(1000000))) --> 104 bytes
+
+    A medida que aumentamos o tamanho da lista --> O espaco ocupado na memoria aumenta --> O generator nao
+
+    A lista e um objeto iteravel, logo, tem um iterator --> Apesar do iterator entregar um valor por vez, todos os valores da lista ja estao salvos na memoria
+
+    No caso do generator, ele nao salva todos os valores na memoria --> Vai salvando a medida que entrega os valores
+
+    A vantagem da lista e que conseguimos acessar qualquer indice, uma vez que todos os elementos estao salvos na memoria --> No caso do generator, isso nao e possivel
+- Em resumo --> iterator trabalha com um objeto iteravel e e uma classe, com os metodos .__iter__ e .__next__ --> generator e uma funcao que pausa --> Gera os elementos e pausa a cada execucao
+- Generator functions
+    - Utilizar yield ao inves de return
+    - yield pausa a funcao onde ele esta
+    - O return nesse caso sera a mensagem exibida pela excecao de StopIteration
+    - yield from --> Usado para transitar entre funcoes generators

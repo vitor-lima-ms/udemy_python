@@ -47,3 +47,18 @@
         - Dessa forma, podemos adicionar quantos parametros quisermos na funcao saudacao (e.g., em situacoes de refatoracao de codigo) --> Se ela estiver sendo executada a partir da funcao executa(), que tem *args, nao teriamos erros
 - Closure
     - Forcar o salvamento de argumentos passados para  uma funcao, criando uma outra funcao dentro dela que retorna esses argumentos. A funcao principal ira retornar a funcao (sem ()) e essa funcao sera atribuida a uma variavel. O Closure so acontecera que utilizarmos o artifico nome_variavel(), uma vez que a variavel armazenou essa funcao, logo, nome_variavel() executa a funcao armazenada
+- Funcao lambda
+    - A funcao lambda e uma funcao como qualquer outra no Python. Porem, sao funcoes anonimas que contem apenas uma linha. Ou seja, tudo deve ser contido dentro de uma unica expressao
+    - Muito utilizada para ensinar a linguagem a como ordenar dicionarios dentro de listas, por exemplo
+    - lambda parametro(s): resultado, argumentos
+    - Exemplo:
+        - Queremos ordenar uma lista que tem dicionarios dentro
+        - Passaremos apenas o nome da funcao que criaremos --> Python vai mandar o item da lista para a funcao
+        - lista.sort(key=funcao)
+        - def funcao(item):
+            return item['chave']
+        - Utilizando lambda
+            lista.sort(key=lambda item: item['chave'])
+        - Utilizando o sorted() --> Copia rasa
+            sorted(lista, key=lambda item: item['chave'])
+    - Usar em coisas simples
