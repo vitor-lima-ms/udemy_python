@@ -8,10 +8,7 @@ produtos = [
 
 '''Ordenar os produtos por preco crescente e gerar uma variavel produtos_ordenados_por_preco por deep copy'''
 
-def ordena_por_preco(produto):
-    return produto['preco']
-
-ordenamento = sorted(produtos, key=ordena_por_preco)
+ordenamento = sorted(produtos, key=lambda produto: produto['preco'])
 
 from copy import deepcopy
 
