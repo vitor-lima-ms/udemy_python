@@ -1,0 +1,29 @@
+ - import
+    - Inteiro --> import nome_modulo
+        - Vantagens --> Voce tem o namespace do modulo
+        - Desvantagens --> Nomes grandes
+    - Partes --> from nome_modulo import objeto1, objeto2
+        - Vantagens --> Nomes pequenos
+        - Desvantagens --> Sem o namespace do modulo
+    - alias 1 --> import nome_modulo as apelido
+    - alias 2 --> from nome_modulo import objeto as apelido
+        - Vantagens --> Podemos reservar nomes para o codigo
+        - Desvantagens --> Pode ficar fora do padrao da linguagem
+    - Ma pratica --> from nome_modulo import *
+        - Importa tudo do modulo sem precisar de utilizar o namespace para utilizar os objetos/funcoes
+- Modularizacao de um codigo
+    - Separar os blocos do codigo em diferentes arquivos
+    - O primeiro modulo executado chama-se __main__
+        - print(__name__) --> Retorna o nome do modulo
+    - Podemos importar outro modulo inteiro ou parte do modulo
+    - O Python conhece a pasta onde o __main__ esta e as pastas abaixo dele
+        - Pastas (pacotes) e modulos acima do __main__ nao sao reconhecidos por padrao
+        - Todos os modulos em pastas identificadas pelo sys.path sao reconhecidas
+            - Podemos adicionar caminho ao sys.path --> sys.path.append('caminho')
+    - A regra de nomeacao de modulos segue a mesma das variaveis
+- Recarregar modulos
+    - Modulos sao sigleton --> So pode existir uma instancia durante o programa todo, enquanto ele estiver sendo executado
+        - Nao importa quantas vezes usarmos o import para um mesmo modulo, ele so sera importado 1 vez
+    - Contudo, podemos recarregar os modulos
+        - import importlib
+            importlib.reload(modulo)

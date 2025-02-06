@@ -1,0 +1,15 @@
+- Pasta que tem modulos Python
+- O nome dos pacotes devem seguir a mesma regra de nomeacao de variaveis
+- Sempre criar pacotes a partir da pasta do __main__
+- import pacote.modulo
+- from pacote.modulo import funcao
+- from pacote import modulo
+- Ma pratica
+    - from pacote.modulo import *
+    - Importa tudo
+    - Podemos passar uma lista com o metodo __all__ --> Somente as variaveis, funcoes etc. que estao na lista vao ser importadas com o *
+- Todas as importacoes devem ser do ponto de vista do arquivo __main__
+- .__init__.py
+    - Permite a inicializacao de tudo no pacote que esteja nesse arquivo
+    - E como se o package se comportasse como um modulo
+    - Alem de colocar variaveis e funcoes diretamente no proprio __init__, podemos importar modulos para que eles sejam disponibilizados diretamente quando importarmos a biblioteca desse __init__
