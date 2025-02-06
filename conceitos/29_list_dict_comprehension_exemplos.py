@@ -34,7 +34,7 @@ print(*produtos, sep='\n')
 
 #Mapping
 produtos_modificados = [ 
-    {'nome': produto['nome'], 'preco': produto['preco'] * 1.25} #Aumento de 25% no preco
+    {**produto, 'preco': produto['preco'] * 1.25} #Aumento de 25% no preco
     for produto in produtos
 ]
 print()
