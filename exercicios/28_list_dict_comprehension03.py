@@ -14,4 +14,6 @@ from copy import deepcopy
 
 produtos_ordenados_por_preco = deepcopy(ordenamento)
 
+print(*produtos, sep='\n')
+print()
 print(*produtos_ordenados_por_preco, sep='\n')

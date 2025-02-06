@@ -9,7 +9,7 @@ produtos = [
 '''Aumentar o preco dos produtos em 10% e gerar uma variavel novos_produtos por deep copy'''
 
 aumento = [
-    {'nome': produto['nome'], 'preco': produto['preco'] * 1.1}
+    {'nome': produto['nome'], 'preco': round((produto['preco'] * 1.1), 2)}
     for produto in produtos
 ]
 
@@ -17,4 +17,6 @@ from copy import deepcopy
 
 novos_produtos = deepcopy(aumento)
 
+print(*produtos, sep='\n')
+print()
 print(*novos_produtos, sep='\n')
