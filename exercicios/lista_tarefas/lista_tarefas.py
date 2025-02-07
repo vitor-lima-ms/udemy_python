@@ -55,6 +55,7 @@ while True:
             json.dump(
                 todo_list,
                 file,
+                indent=2,
                 ensure_ascii=False
             )
         break

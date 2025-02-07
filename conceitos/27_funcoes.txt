@@ -21,10 +21,13 @@
 - return
     - Funcoes que apenas executam acoes --> return = None --> e.g., print(): Apenas mostra o conteudo na saida padrao
     - Funcoes com return --> Permitem armazenar os resultados da funcao em variaveis (i.e., na memoria do computador)
-- *args
+- Argumentos
     - *args --> N argumentos nao nomeados --> Empacota em uma tupla
         - Se quisermos enviar variaveis ja empacotadas, precisamos desempacotar antes utilizando o * tambem
-    - **kwargs --> N argumentos nomeados
+        - Se utilizarmos / na definicao dos parametros da fucao --> Antes da barra o usuario so vai poder digitar argumentos posicionais
+    - **kwargs --> N argumentos nomeados --> Empacota em um dicionario
+        - Se utilizarmos * sozinho na definicao dos parametros da fucao --> Depois dele, so argumentos nomeados
+    - Podemos combinar / com *
 - Higher Order Functions e First-Class Functions
     - Podemos atribuir funcoes como um todo a uma variavel
         - First-Class Functions

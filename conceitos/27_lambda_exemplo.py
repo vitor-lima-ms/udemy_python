@@ -17,6 +17,7 @@ produtos_ordenados_por_preco = deepcopy(ordenamento)
 
 print(*produtos_ordenados_por_preco, sep='\n')
 
+''''''
 alunos = [
     {'nome': 'Luiz', 'nota': 'A'},
     {'nome': 'Letícia', 'nota': 'B'},
