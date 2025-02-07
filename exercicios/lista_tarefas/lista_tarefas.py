@@ -1,6 +1,26 @@
 import estilizacao, listar, desfazer, refazer
+import json
 
-todo_list = []
+try:
+    with open(
+    '/home/vitor/udemy_python/exercicios/lista_tarefas/lista_tarefas.json',
+    'r',
+    ) as file:
+        todo_list = json.load(
+            file
+
+    )
+except FileNotFoundError:
+    todo_list = []
+    with open(
+    '/home/vitor/udemy_python/exercicios/lista_tarefas/lista_tarefas.json',
+    'x'
+    ) as file:
+      json.dump(
+          todo_list,
+          file,
+          ensure_ascii=False
+      ) 
 
 while True:
 
@@ -28,6 +48,15 @@ while True:
 
     
     elif opt == 'sair':
+        with open(
+            '/home/vitor/udemy_python/exercicios/lista_tarefas/lista_tarefas.json',
+            'w',
+            ) as file:
+            json.dump(
+                todo_list,
+                file,
+                ensure_ascii=False
+            )
         break
     
     else:
