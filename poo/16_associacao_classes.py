@@ -2,6 +2,7 @@
 #Essa e a relacao mais comum entre objetos e tem subconjuntos como agregacao e composicao
 #Geralmente, temos uma associacao quando um objeto tem um atributo que referencia outro objeto
 #A associacao nao especifica como um objeto controla o ciclo de vida de outro objeto
+#UM OBJETO USA O OUTRO
 
 class Writer:
     def __init__(self, name):

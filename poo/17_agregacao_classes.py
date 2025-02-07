@@ -3,7 +3,7 @@
 #Geralmente e uma relacao de um para muitos, onde um objeto tem um ou muitos objetos
 #Os objetos podem viver separadamente, mas pode se tratar de uma relacao onde um objeto precisa de outro para fazer determinada tarefa --> Pensar em carro e roda --> Ambos existem separadamente mas o carro nao funciona perfeitamente sem a roda
     #Existem controversias sobre as definicoes de agregacao
-
+#UM OBJETO TEM OUTRO OBJETO
 class ShopingChart:
     def __init__(self):
         self._products = [] #Nao precisa ser acessado fora da classe

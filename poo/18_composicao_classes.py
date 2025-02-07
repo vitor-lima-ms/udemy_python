@@ -1,5 +1,6 @@
 #E uma especializacao da agregacao
     #Mas nela, quando o objeto 'pai' for apagado, todas as referencias dos objetos filhos tambem sao apagadas
+#E DONO DE UM OBJETO
 
 class Client:
     def __init__(self, name):
