@@ -5,3 +5,6 @@ iphone = Smartphone('iPhone 16')
 
 galaxy_s.turn_on()
 iphone.turn_on()
+
+galaxy_s.turn_off()
+iphone.turn_off()

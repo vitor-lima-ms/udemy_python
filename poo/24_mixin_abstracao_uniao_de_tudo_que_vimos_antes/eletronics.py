@@ -28,11 +28,16 @@ class Eletronic:
         
         print('O dispositivo já está ligado.')
 
-class Smartphone(Eletronic):
+class Smartphone(Eletronic, LogPrintMixin): #Se quiser usar o LogFileMixin, substituir o LogPrintMIxin
     def turn_on(self): #Definimos os metodos da classe mae aqui apenas para utilizar os mixins
         super().turn_on() #Repassando a execucao para a superclasse Eletronic. Se eu quisesse fazer alguma coisa antes ou depois de passar para a classe super, deveria jogar esse resultado em uma variavel e retorna-la
 
         #Forma com heranca multipla
+
+        if self._online:
+            msg = f'{self._name} ligado.'
+            self.log_success(msg)
+
 
         '''if self._online:
             log_print = LogPrintMixin()
@@ -43,3 +48,7 @@ class Smartphone(Eletronic):
     
     def turn_off(self):
         super().turn_off()
+    
+        if not self._online:
+            msg = f'{self._name} desligado.'
+            self.log_success(msg)
