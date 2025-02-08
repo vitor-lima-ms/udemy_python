@@ -27,4 +27,4 @@ c = C()
 print(c.attr_a)
 print(c.attr_b)
 print(c.attr_c) #C herdou tudo de B que herdou de A. Apenas o metodo que nao, pois ele tem o mesmo nome nas 3, logo o MRO so utilizara o de C
-print(C.mro())
+print(C.mro()) #Metodo de classe que retorna o MRO
