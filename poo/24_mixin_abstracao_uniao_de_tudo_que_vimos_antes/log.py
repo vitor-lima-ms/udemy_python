@@ -3,7 +3,7 @@
 from pathlib import Path
 LOG_FILE_PATH = Path(__file__).parent / 'log_file.txt' #Caminho absoluto da pasta onde esta modulo log.py --> Nesse caso o modulo Path entende que a / antes do nome do arquivo siginifica uma concatenacao
 
-#Logs sao exemplos de classes mixin
+#Logs sao exemplos de classes mixins
 
 class Log: #Generico --> Abstracao
     def _log(self, msg): #Assinatura do metodo --> Nome do metodo, parametros e tipos que ele recebe e todo retorno que ele tem

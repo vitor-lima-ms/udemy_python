@@ -1,3 +1,5 @@
+'''PREFIRA ASSOCIACAO (ASSOCIACAO, AGREGACAO OU COMPOSICAO) AO INVES DE HERANCA --> HERANCA PODE COMPLICAR MUITO'''
+
 #Heranca simples --> Relacao entre classes
 
 #Classe principal (e.g., Pessoa) --> super class, base class, parent class
