@@ -7,7 +7,7 @@ LOG_FILE_PATH = Path(__file__).parent / 'log_file.txt' #Caminho absoluto da past
 
 class Log: #Generico --> Abstracao
     def _log(self, msg): #Assinatura do metodo --> Nome do metodo, parametros e tipos que ele recebe e todo retorno que ele tem
-        raise NotImplementedError('Não use a classe Log diretamente.') #Isso e a abstracao --> Nao queremos que uma pessoa utilize essa classe diretamente
+        raise NotImplementedError('Implemente o método _log na subclasse.') #Isso e a abstracao --> Nao queremos que uma pessoa utilize essa classe diretamente
     
     def log_error(self, msg):
         self._log(f'Error: {msg}')
