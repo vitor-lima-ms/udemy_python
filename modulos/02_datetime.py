@@ -39,8 +39,7 @@ print(date03)'''
 
 #Formatando datas
 
-'''from datetime import datetime
-from datetime import datetime, timedelta
+'''from datetime import datetime, timedelta
 from dateutil.relativedelta import relativedelta
 
 fmt = '%d/%m/%Y %H:%M:%S'
