@@ -14,15 +14,15 @@ class Person(ABC):
         return f'{inst_dict} ({class_name})'
     
     @property
-    def name(self) -> str:
+    def name(self) -> object:
         return self._name
     
     @name.setter
-    def name(self, value: int) -> None:
+    def name(self, value: str) -> None:
         self._name = value
 
     @property
-    def age(self) -> str:
+    def age(self) -> object:
         return self._age
     
     @age.setter
@@ -32,6 +32,7 @@ class Person(ABC):
 class Client(Person):
     def __init__(self, name, age):
         super().__init__(name, age)
+        acc_type = None
     
     def acc(self) -> None:
         acc_type = input('Tipo da conta [Corrente ou Poupança]: ')
@@ -54,4 +55,4 @@ if __name__ == '__main__': #Executar testes so aqui
     p1.acc_.withdraw()
 
     print(p1.acc_.__dict__)'''
-    print(p1.__dict__)
+    #print(p1.__dict__)

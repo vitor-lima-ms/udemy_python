@@ -1,6 +1,7 @@
 from abc import ABC, abstractmethod
 
 class Acc(ABC):
+
     def __init__(self, ag: int, acc_number: int, balance: int) -> None:
         self.ag = ag
         self.acc_number = acc_number
@@ -56,7 +57,7 @@ if __name__ == '__main__': #Executar testes so aqui
     c1 = CheckingAcc(1, 2, 1000)
     print(c1)
     c2 = SavingsAcc(3, 4, 2000)
-    print(c2)
+    print(c2._LIMIT)
 
     '''c2.withdraw()
     c2.deposit()'''
