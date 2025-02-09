@@ -1,6 +1,12 @@
 from abc import ABC, abstractmethod
 
 class Acc(ABC):
+    def __init__(self, ag: int, acc_number: int, balance: int):
+        self.ag = ag
+        self.acc_number = acc_number
+        self._balance = balance
+        print(f'Balanço: R${self._balance}')
+    
     @abstractmethod
     def withdraw(self):
         value = float(input('Valor do saque: R$'))
@@ -12,15 +18,17 @@ class Acc(ABC):
         else:
             print(f'Saque de R${value} autorizado. Novo saldo: R${self._balance}')
             self._balance -= value
+    
+    def deposit(self):
+        value = float(input('Valor do depósito: R$'))
+        self._balance += value
+        print(f'Novo saldo: R${self._balance}')
 
 class CheckingAcc(Acc):
     _LIMIT = -200
 
     def __init__(self, ag: int, acc_number: int, balance: int):
-        self.ag = ag
-        self.acc_number = acc_number
-        self._balance = balance
-        print(f'Balanço: R${self._balance}')
+        super().__init__(ag, acc_number, balance)
     
     def __repr__(self):
         class_name = self.__class__.__name__
@@ -28,9 +36,7 @@ class CheckingAcc(Acc):
         return f'{inst_dict} ({class_name})'
     
     def deposit(self):
-        value = float(input('Valor do depósito: R$'))
-        self._balance += value
-        print(f'Novo saldo: R${self._balance}')
+        super().deposit()
     
     def withdraw(self):
         super().withdraw()
@@ -39,10 +45,7 @@ class SavingsAcc(Acc):
     _LIMIT = 0
 
     def __init__(self, ag: int, acc_number: int, balance: int):
-        self.ag = ag
-        self.acc_number = acc_number
-        self._balance = balance
-        print(f'Balanço: R${self._balance}')
+        super().__init__(ag, acc_number, balance)
     
     def __repr__(self):
         class_name = self.__class__.__name__
@@ -50,9 +53,7 @@ class SavingsAcc(Acc):
         return f'{inst_dict} ({class_name})'
     
     def deposit(self):
-        value = float(input('Valor do depósito: R$'))
-        self._balance += value
-        print(f'Novo saldo: R${self._balance}')
+        super().deposit()
     
     def withdraw(self):
         super().withdraw()

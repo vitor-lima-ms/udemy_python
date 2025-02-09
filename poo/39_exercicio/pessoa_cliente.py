@@ -30,8 +30,8 @@ class Person(ABC):
         self._age = value    
 
 class Client(Person):
-    def __init__(self, name, age):
-        super().__init__(name, age)
+    def __init__(self, name, age: int):
+        super().__init__(name, age: int)
     
     def acc(self):
         acc_type = input('Tipo da conta [Corrente ou Poupança]: ')
