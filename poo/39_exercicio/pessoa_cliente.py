@@ -50,9 +50,9 @@ class Client(Person):
 if __name__ == '__main__': #Executar testes so aqui
     p1 = Client('Vitor', 24)
     
-    '''p1.acc()
-    p1.acc_.deposit()
-    p1.acc_.withdraw()
+    p1.acc()
+    '''p1.acc_.deposit()
+    p1.acc_.withdraw()'''
 
-    print(p1.acc_.__dict__)'''
+    print(p1.acc_.__dict__)
     #print(p1.__dict__)
