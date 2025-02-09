@@ -4,37 +4,41 @@ from random import randint
 
 class Person(ABC):
     @abstractmethod
-    def __init__(self, name: str, age: int):
+    def __init__(self, name: str, age: int) -> None:
         self._name = name
         self._age = age
     
-    def __repr__(self):
+    def __repr__(self) -> str:
         class_name = self.__class__.__name__
         inst_dict = self.__dict__
         return f'{inst_dict} ({class_name})'
     
     @property
-    def name(self):
+    def name(self) -> str:
         return self._name
     
     @name.setter
-    def name(self, value: int):
+    def name(self, value: int) -> None:
         self._name = value
 
     @property
-    def age(self):
+    def age(self) -> str:
         return self._age
     
     @age.setter
-    def age(self, value: int):
+    def age(self, value: int) -> None:
         self._age = value    
 
 class Client(Person):
-    def __init__(self, name, age: int):
-        super().__init__(name, age: int)
+    def __init__(self, name, age):
+        super().__init__(name, age)
     
-    def acc(self):
+    def acc(self) -> None:
         acc_type = input('Tipo da conta [Corrente ou Poupança]: ')
+
+        while acc_type.lower() not in 'corrente' and acc_type.lower() not in 'poupança':
+            print('Opção inválida!')
+            acc_type = input('Tipo da conta [Corrente ou Poupança]: ')
         
         if acc_type in 'Corrente':
             self.acc_ = CheckingAcc(randint(0, 3), randint(0,3), randint(0, 9999))
