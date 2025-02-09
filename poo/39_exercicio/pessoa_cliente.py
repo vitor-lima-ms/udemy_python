@@ -34,17 +34,20 @@ class Client(Person):
         super().__init__(name, age)
     
     def acc(self):
-        acc_type = input('Tipo da conta[Corrente ou Poupança]: ')
+        acc_type = input('Tipo da conta [Corrente ou Poupança]: ')
         
         if acc_type in 'Corrente':
-            self.acc_ = CheckingAcc(randint(0, 5), randint(0,3), randint(0, 9999))
+            self.acc_ = CheckingAcc(randint(0, 3), randint(0,3), randint(0, 9999))
             
         elif acc_type in 'Poupança':
-            self.acc_ = SavingsAcc(randint(0, 5), randint(0,3), randint(0, 9999))
+            self.acc_ = SavingsAcc(randint(0, 3), randint(0,3), randint(0, 9999))
 
 if __name__ == '__main__': #Executar testes so aqui
     p1 = Client('Vitor', 24)
-    #print(p1)
-
-    p1.acc()
+    
+    '''p1.acc()
     p1.acc_.deposit()
+    p1.acc_.withdraw()
+
+    print(p1.acc_.__dict__)'''
+    print(p1.__dict__)

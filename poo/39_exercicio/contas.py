@@ -6,7 +6,7 @@ class Acc(ABC):
         value = float(input('Valor do saque: R$'))
         self._balance -= value
 
-        if self._balance < self._limit:
+        if self._balance < self._LIMIT:
             print(f'Saque negado. O saldo R${self._balance} ficará menor que o limite.')
             self._balance += value
         else:
@@ -14,12 +14,13 @@ class Acc(ABC):
             self._balance -= value
 
 class CheckingAcc(Acc):
-    _limit = -200
+    _LIMIT = -200
 
     def __init__(self, ag: int, acc_number: int, balance: int):
         self.ag = ag
         self.acc_number = acc_number
         self._balance = balance
+        print(f'Balanço: R${self._balance}')
     
     def __repr__(self):
         class_name = self.__class__.__name__
@@ -35,12 +36,13 @@ class CheckingAcc(Acc):
         super().withdraw()
 
 class SavingsAcc(Acc):
-    _limit = 0
+    _LIMIT = 0
 
     def __init__(self, ag: int, acc_number: int, balance: int):
         self.ag = ag
         self.acc_number = acc_number
         self._balance = balance
+        print(f'Balanço: R${self._balance}')
     
     def __repr__(self):
         class_name = self.__class__.__name__
