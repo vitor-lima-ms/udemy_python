@@ -131,8 +131,8 @@ for root, dirs, files in os.walk(FOLDER):
             shutil.copy(file_path, new_file_path)'''
 
 ##Copiar de uma maneira mais facil mas sem poder alterar coisas no meio do caminho
-#shutil.rmtree(COPY_FOLDER, ignore_errors=True)
-#shutil.copytree(FOLDER, COPY_FOLDER)
+#shutil.rmtree(COPY_FOLDER, ignore_errors=True) #Remove recursivamente
+#shutil.copytree(FOLDER, COPY_FOLDER) #Copia recursivamente
 
 #shutil.move(COPY_FOLDER, '/home/vitor/Desktop') #Mover
 
