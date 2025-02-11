@@ -18,4 +18,6 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv() #Temos que criar um arquivo .env na raiz do projeto para dps executar essa funcao --> Devemos adicionar .env no gitignore para que esse arquivo nao vai para o github --> Ele contem informacoes de acesso a base de dados etc.
-print(os.getenv('DB_PASSWORD')) #Printa todas as variaveis de ambiente
+print(os.getenv('DB_PASSWORD'))
+
+'''NUNCA MANDAR O MEU .ENV PRA UM REPOSITORIO. ENVIAR UM .ENV-EXAMPLE'''
