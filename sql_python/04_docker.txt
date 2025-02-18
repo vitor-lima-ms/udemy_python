@@ -1,10 +1,13 @@
-Facilita o trabalho com bases de dados
+- Facilita o trabalho com bases de dados
+    Subimos um container do docker e nesse container subimos a base de dados que quisermos
 
-Subimos um container do docker e nesse container subimos a base de dados que quisermos
+- Explicacao do que e o Docker:
 
-Explicacao do que e o Docker:
+    - https://www.youtube.com/watch?v=DdoncfOdru8&t=45s -> Docker
 
-First you need to understand Containers.
+    - https://www.youtube.com/watch?v=D_ha0g9yS2E&t=76s -> Docker compose
+
+    - '''First you need to understand Containers.
 
 Containers are something like a virtual machine, it has its operating system and all, except that unlike virtual machines they don’t simulate the entire computer, but rather create a sand boxed environment that pretends to be a virtual machine.
 
@@ -24,4 +27,4 @@ If get pissed off at Amazon and decide to go to Google cloud, I deploy the same 
 
 Unlike virtual machines, because docker create these light weight containers, I won’t loose much performance.
 
-Finally, a docker file is a simple instruction file that tells docker to download an image, then run some commands on it, such as install additional software, etc
+Finally, a docker file is a simple instruction file that tells docker to download an image, then run some commands on it, such as install additional software, etc'''
