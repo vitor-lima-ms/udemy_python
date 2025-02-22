@@ -1,6 +1,0 @@
-Diagrama Entidade Relacionamento (DER)
-
-- Basicamente uma abstracao de uma parte do sistemas que iremos criar
-    - Criar um diagrama do sistema inteiro e inviavel
-
-- As entidades sao os retangulos e os relacionamentos as linhas
